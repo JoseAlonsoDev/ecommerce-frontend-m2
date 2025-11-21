@@ -1,0 +1,12 @@
+
+#banner .carousel-item img {
+    height: 500px;  
+    object-fit: fill;   
+     
+}
+
+@media (max-width: 768px) {
+    #banner .carousel-item img {
+        height: 250px;
+    }
+}
