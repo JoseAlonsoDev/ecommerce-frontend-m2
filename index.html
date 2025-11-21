@@ -12,9 +12,6 @@
 
 <body class="d-flex flex-column min-vh-100">
     <header>
-        <div class="bg-primary text-white text-center py-1 small">
-            ¡Envío gratis en compras sobre $50.000!
-        </div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand fw-bold text-primary" href="#">Pokochos TCG</a>
@@ -27,28 +24,27 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
-                        </li>
-                        <li class="nav-item ms-lg-3">
-                            <a class="btn btn-outline-light btn-sm position-relative" href="cart.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-cart" viewBox="0 0 16 16">
-                                    <path
-                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
-                                </svg>
-                                Carrito
-                                <span
-                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                    <span id="cart-count">0</span>
-                                    <span class="visually-hidden">productos en carrito</span>
-                                </span>
-                            </a>
+                            <a class="nav-link" href="contact.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
+
+                <a class="btn btn-outline-light btn-sm position-relative ms-3" href="cart.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-cart" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg>
+                    Carrito
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        <span id="cart-count">0</span>
+                        <span class="visually-hidden">productos en carrito</span>
+                    </span>
+                </a>
             </div>
         </nav>
     </header>
@@ -62,7 +58,8 @@
                     <img src="ASSETS/IMAGES/BANNER/bannertcgmagic.jpg" class="d-block w-100" alt="Banner Magic TCG">
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                    <img src="ASSETS/IMAGES/BANNER/bannertcgonepiece.jpg" class="d-block w-100" alt="Banner One Piece TCG">
+                    <img src="ASSETS/IMAGES/BANNER/bannertcgonepiece.jpg" class="d-block w-100"
+                        alt="Banner One Piece TCG">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -92,7 +89,13 @@
                             <p class="card-text text-muted">Expansión Escarlata y Púrpura. ¡Atrápalos a todos!</p>
                             <div class="mt-auto">
                                 <p class="fs-4 fw-bold text-primary mb-2">$6.000 CLP</p>
-                                <button class="btn btn-primary w-100">Añadir al carrito</button>
+                                <button class="btn btn-primary w-100 btn-add-cart" 
+                                    data-id="1" 
+                                    data-titulo="Sobre Pokémon TCG" 
+                                    data-precio="6000" 
+                                    data-imagen="ASSETS/IMAGES/PRODUCTS/sobretcgpokemon.webp">
+                                    Añadir al carrito
+                                </button>
                             </div>
                         </div>
                     </article>
@@ -107,7 +110,13 @@
                             <p class="card-text text-muted">Play booster spiderman edition.</p>
                             <div class="mt-auto">
                                 <p class="fs-4 fw-bold text-primary mb-2">$6.000 CLP</p>
-                                <button class="btn btn-primary w-100">Añadir al carrito</button>
+                                <button class="btn btn-primary w-100 btn-add-cart" 
+                                    data-id="2" 
+                                    data-titulo="Sobre Magic MTG" 
+                                    data-precio="6000" 
+                                    data-imagen="ASSETS/IMAGES/PRODUCTS/sobretcgmagic.jpg">
+                                    Añadir al carrito
+                                </button>
                             </div>
                         </div>
                     </article>
@@ -122,7 +131,13 @@
                             <p class="card-text text-muted">Emperors in the new world. Encuentra el One Piece.</p>
                             <div class="mt-auto">
                                 <p class="fs-4 fw-bold text-primary mb-2">$6.000 CLP</p>
-                                <button class="btn btn-primary w-100">Añadir al carrito</button>
+                                <button class="btn btn-primary w-100 btn-add-cart" 
+                                    data-id="3" 
+                                    data-titulo="Sobre One Piece TCG" 
+                                    data-precio="6000" 
+                                    data-imagen="ASSETS/IMAGES/PRODUCTS/sobretcgonepiece.webp">
+                                    Añadir al carrito
+                                </button>
                             </div>
                         </div>
                     </article>
@@ -143,7 +158,7 @@
                     <h5 class="text-uppercase mb-4 fw-bold">Enlaces</h5>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-light text-decoration-none">Home</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Contacto</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 mx-auto mt-3">
@@ -161,6 +176,18 @@
             </div>
         </div>
     </footer>
+    <!-- Toast container -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1080;">
+        <div id="add-toast" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="3000">
+            <div class="d-flex">
+                <div id="add-toast-body" class="toast-body">
+                    Producto añadido al carrito
+                </div>
+                <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
     <script src="ASSETS/JS/jquery.js"></script>
     <script src="ASSETS/JS/bootstrap.bundle.js"></script>
     <script src="ASSETS/JS/script.js"></script>

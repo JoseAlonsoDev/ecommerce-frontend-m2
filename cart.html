@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Pokochos TCG</title>
+    <link rel="stylesheet" href="ASSETS/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="ASSETS/CSS/styles.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary" href="index.html">Pokochos TCG</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-light btn-sm position-relative" href="cart.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                </svg>
+                                Carrito
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    <span id="cart-count">0</span>
+                                    <span class="visually-hidden">productos en carrito</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-shrink-0">
+        <div class="container my-5">
+            <h2 class="fw-bold mb-4">Tu Carrito de Compras</h2>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div id="carrito-items">
+                        <!-- Los productos se renderizan aquí desde script.js -->
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-4">Resumen de Compra</h5>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Subtotal:</span>
+                                <span id="carrito-subtotal">$0</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Envío:</span>
+                                <span class="text-success">Gratis</span>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between mb-3">
+                                <strong>Total:</strong>
+                                <strong class="text-primary fs-4" id="carrito-total">$0</strong>
+                            </div>
+                            <button class="btn btn-primary w-100">Finalizar Compra</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light pt-5 pb-4 mt-auto">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-primary">Pokochos TCG</h5>
+                    <p>Tu tienda experta en cartas coleccionables</p>
+                </div>
+                <div class="col-md-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold">Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold">Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li>ventas@pokochostcg.com</li>
+                        <li>+569 1234 5678</li>
+                    </ul>
+
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="text-center">
+                <p>© 2025 <strong>Pokochos TCG</strong></p>
+            </div>
+        </div>
+    </footer>
+    <script src="ASSETS/JS/jquery.js"></script>
+    <script src="ASSETS/JS/bootstrap.bundle.js"></script>
+    <script src="ASSETS/JS/script.js"></script>
+</body>
+
+</html>
